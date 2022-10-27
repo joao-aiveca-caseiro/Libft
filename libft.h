@@ -6,7 +6,7 @@
 /*   By: jaiveca- <jaiveca-@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 13:10:58 by jaiveca-          #+#    #+#             */
-/*   Updated: 2022/10/26 16:39:54 by jaiveca-         ###   ########.fr       */
+/*   Updated: 2022/10/27 15:57:06 by jaiveca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,25 +56,25 @@ char	**ft_split(char *s, char c);
 
 char	*ft_strchr(const char *str, int c);
 
-char	*strdup(const char *s);
+char	*ft_strdup(const char *s);
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 char	*ft_strjoin(char const *s1, char const *s2);
 
-size_t	strlcat(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
-size_t	strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
 size_t	ft_strlen(const char *str);
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
-int		strncmp(const char *str1, const char *str2, size_t n);
+int		ft_strncmp(const char *str1, const char *str2, size_t n);
 
-char	*strnstr(const char	*big, const char *little, size_t len);
+char	*ft_strnstr(const char	*big, const char *little, size_t len);
 
-char	*strrchr(const char *str, int c);
+char	*ft_strrchr(const char *str, int c);
 
 char	*ft_strtrim(char const *s1, char const *set);
 
