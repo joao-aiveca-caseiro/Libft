@@ -6,7 +6,7 @@
 /*   By: jaiveca- <jaiveca-@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 13:10:58 by jaiveca-          #+#    #+#             */
-/*   Updated: 2022/10/27 15:57:06 by jaiveca-         ###   ########.fr       */
+/*   Updated: 2022/10/31 00:37:28 by jaiveca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	ft_putnbr_fd(int n, int fd);
 
 void	ft_putstr_fd(char *s, int fd);
 
-char	**ft_split(char *s, char c);
+char	**ft_split(char *s, char sep);
 
 char	*ft_strchr(const char *str, int c);
 
