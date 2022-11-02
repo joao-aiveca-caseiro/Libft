@@ -6,7 +6,7 @@
 /*   By: jaiveca- <jaiveca-@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 18:28:29 by jaiveca-          #+#    #+#             */
-/*   Updated: 2022/10/27 14:04:21 by jaiveca-         ###   ########.fr       */
+/*   Updated: 2022/11/01 13:37:56 by jaiveca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	d = (char *)dest;
 	s = (char *)src;
+	if (d == NULL && s == NULL)
+		return (NULL);
 	while (i < n)
 	{
 		d[i] = s[i];

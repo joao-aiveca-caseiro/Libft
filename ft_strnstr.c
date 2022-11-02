@@ -6,7 +6,7 @@
 /*   By: jaiveca- <jaiveca-@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:14:30 by jaiveca-          #+#    #+#             */
-/*   Updated: 2022/10/28 13:44:07 by jaiveca-         ###   ########.fr       */
+/*   Updated: 2022/11/01 15:08:37 by jaiveca-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strnstr(const char	*big, const char *little, size_t len)
 
 	i = 0;
 	n = 0;
+	if (big == NULL && len == 0)
+		return (NULL);
 	if (little[i] == '\0')
 		return ((char *) big);
 	while (big[i] && i < len)
